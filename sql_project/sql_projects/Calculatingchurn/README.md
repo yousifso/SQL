@@ -1,17 +1,34 @@
-# Subscription Analysis Project
+# Calculating Churn SQL Project
 
 ## Project Overview
-This SQL project examines subscription data to calculate churn rates for different customer segments over specified periods.
+The Calculating Churn project aims to analyze customer retention and churn rates for a subscription-based service. This SQL script uses Common Table Expressions (CTEs) to systematically break down the process of aligning subscription data with predefined monthly intervals, identifying active and canceled subscriptions, and ultimately calculating churn rates.
 
-## Files
-- `subscription_analysis.sql`: Contains SQL queries for calculating active and canceled subscriptions, and deriving churn rates.
+## Structure of the Script
+- **Monthly Intervals Definition**: Defines three months as the period for analysis.
+- **Data Alignment**: Performs a cross join between the `subscriptions` table and the defined monthly intervals.
+- **Status Identification**: Identifies whether each subscription is active or canceled within each monthly interval.
+- **Status Aggregation**: Aggregates the data to count active and canceled subscriptions for each month.
+- **Churn Rate Calculation**: Calculates the churn rate for each customer segment based on the aggregated data.
 
-## Queries
-1. **Monthly Definitions**: Defines monthly periods for analysis.
-2. **Data Alignment**: Aligns subscriptions with months using a cross join.
-3. **Subscription Status**: Categorizes subscriptions as active or canceled within each month.
-4. **Status Aggregation**: Aggregates statuses to compute total active and canceled subscriptions.
-5. **Churn Rate Calculation**: Calculates churn rates for segments within each defined period.
+## How to Use
+1. **Prepare Your Database**: Ensure your database contains a `subscriptions` table with columns for `subscription_start`, `subscription_end`, and `segment`.
+2. **Run the Script**: Execute the SQL script in a PostgreSQL database or another RDBMS that supports CTEs and window functions.
+3. **Analyze the Output**: Review the output churn rates to understand customer retention trends and make informed business decisions.
 
-## Usage
-These queries are best run on database systems that support window functions, such as PostgreSQL or SQL Server.
+## Features
+- Uses SQL window functions and CTEs for clarity and efficiency in processing.
+- Calculates churn rates, a crucial metric for any subscription-based business model.
+- Adaptable to different time frames or customer segments with minimal modifications.
+
+## Requirements
+- RDBMS like PostgreSQL, MySQL 8+, or Microsoft SQL Server.
+- Initial data setup in the `subscriptions` table.
+
+## License
+This project is released under the MIT License. Feel free to adapt it to fit your needs.
+
+## Contact
+For support or contributions, please contact [yousif_hse@yahoo.com].
+
+Thank you for using or contributing to the Calculating Churn project!
+
