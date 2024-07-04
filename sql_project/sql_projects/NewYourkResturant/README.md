@@ -4,7 +4,7 @@
 This project conducts a detailed analysis of restaurant data stored in the `nomnom` database. The SQL queries included help understand the distribution of restaurants by neighborhood and cuisine, evaluate their reviews, and analyze pricing strategies across different types of food establishments.
 
 ## Files
-- `new_yourk_resturant.sql`: Contains all SQL queries used for querying the restaurant data.
+- `restaurant_queries.sql`: Contains all SQL queries used for querying the restaurant data.
 
 ## Queries
 1. **Retrieve All Records**: Fetches all records from the `nomnom` table to view complete restaurant data.
