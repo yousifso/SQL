@@ -4,7 +4,7 @@
 This project involves analyzing data from a rideshare company's database, focusing on trips, riders, and cars. It utilizes SQL queries to extract, join, and manipulate data to derive insights about trips, rider engagements, and vehicle usage.
 
 ## Files
-- `LyftTrip.sql`: Contains all SQL queries used for the comprehensive analysis of the rideshare data.
+- `rideshare_analysis.sql`: Contains all SQL queries used for the comprehensive analysis of the rideshare data.
 
 ## Queries
 1. **Retrieve All Trips**: Fetches all records from the 'trips' table.
